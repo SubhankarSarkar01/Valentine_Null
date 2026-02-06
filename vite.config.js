@@ -1,7 +1,10 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue' // or your framework
 
 export default defineConfig({
-  plugins: [react()],
-  base: "/valentine_Gift/"
-});
+  plugins: [vue()], // or your plugins
+  base: '/Valentine_Null/', // Add this line - must match your repo name
+  build: {
+    outDir: 'dist'
+  }
+})
